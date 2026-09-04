@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JWB Supply | Tools, Equipment & Supplies — Lisbon, OH</title>
+<meta name="description" content="JWB Supply stocks professional-grade tools, equipment, and supplies for contractors, builders, and DIYers in Lisbon, Ohio." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a href="#top" class="logo"><span>JWB</span><span class="dot">•</span><span>Supply</span></a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul id="navList"></ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="blueprint-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow hero-kicker" id="heroKicker"></span>
+        <h1 class="hero-headline" id="heroHeadline"></h1>
+        <p class="hero-body" id="heroBody"></p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn" id="heroCta"></a>
+        </div>
+      </div>
+      <div class="hero-stats" id="heroStats"></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section-pad">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="productsLabel"></span>
+        <h2 id="productsHeading"></h2>
+        <p class="body" id="productsBody"></p>
+      </div>
+      <div class="product-list" id="productList"></div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section id="brands" class="section-pad">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="brandsLabel"></span>
+        <h2 id="brandsHeading"></h2>
+      </div>
+      <div class="brand-grid" id="brandGrid"></div>
+    </div>
+  </section>
+
+  <!-- WHY US / ABOUT -->
+  <section id="about" class="section-pad">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="whyLabel"></span>
+        <h2 id="whyHeading"></h2>
+        <p class="body" id="whyBody"></p>
+      </div>
+      <div class="why-grid" id="whyGrid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-pad">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow" id="contactLabel"></span>
+        <h2 id="contactHeading"></h2>
+        <p class="body" id="contactBody"></p>
+      </div>
+    </div>
+    <div class="wrap" style="margin-top: 8px;">
+      <div class="spec-plate bracket" id="specPlate"></div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm">
+          <div class="field">
+            <label for="fName">Name</label>
+            <input type="text" id="fName" name="name" required />
+          </div>
+          <div class="field">
+            <label for="fEmail">Email</label>
+            <input type="email" id="fEmail" name="email" required />
+          </div>
+          <div class="field">
+            <label for="fMessage">Message</label>
+            <textarea id="fMessage" name="message" required></textarea>
+          </div>
+          <p class="form-note" id="formNote"></p>
+          <button type="submit" class="btn" id="formSubmit"></button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span>JWB</span><span class="dot">•</span><span>Supply</span></a>
+        <p id="footerTagline"></p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul id="footerQuickLinks"></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul id="footerContact"></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span id="footerCopyright"></span>
+      <span class="legal" id="footerLegal"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
